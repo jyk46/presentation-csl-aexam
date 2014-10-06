@@ -1,0 +1,22 @@
+Title:
+Exploiting Amorphous Data Parallelism with the Explicit-Parallel-Call Architecture
+
+Abstract:
+Heterogeneous architectures combining general-purpose multicores and
+data-parallel accelerators have become an increasingly common approach to
+addressing serious technology challenges. Unfortunately, there are still
+significant inefficiencies with this approach largely due to the
+different abstractions used to expose parallelism across different
+microarchitectures, including incongruity between programming models and
+compilers, as well as suboptimal load balancing. We propose a novel
+explicit-parallel-call (XPC) architecture which exploits a ubiquitous
+type of parallelism called amorphous data parallelism exposed as parallel
+function calls to unify various microarchitectural tiles under a single
+software framework. In terms of hardware, we plan to explore three
+different XPC tiles: tightly coupled lanes where function calls are
+executed in lock-step, loosely coupled lanes where function calls are
+executed using dynamic load balancing, and cooperative multicore where
+function calls are mapped across traditional in-order cores. In terms of
+software, we plan to develop a highly productive parallel programming
+framework for generically encoding amorphous data parallelism, in
+addition to runtimes for adaptively scheduling work across the XPC tiles.
